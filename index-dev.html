@@ -11,8 +11,13 @@
 <body>
 
 
-<div ng-controller="HelloWorldController">
-    {{test}}
+<div ng-controller="SimpleController">
+    <strong>First name:</strong> {{firstName}}<br/>
+    <strong>Last name:</strong> <span ng-bind="lastName"></span><br/>
+    <strong>Full name:</strong> {{fullName()}}<br/>
+    <br/>
+    <label>Set the first name: <input type="text" ng-model="firstName"/></label><br/>
+    <label>Set the last name: <input type="text" ng-model="lastName"/></label>
 </div>
 
 <script type="text/javascript">
