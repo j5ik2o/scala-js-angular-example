@@ -40,23 +40,23 @@ trait Angular extends js.Object {
 
   def injector(modules: js.Array[_] = null): Injector
 
-  def isArray(value: js.Any): Boolean
+  def isArray(value: js.Any): js.Boolean
 
-  def isDate(value: js.Any): Boolean
+  def isDate(value: js.Any): js.Boolean
 
-  def isDefined(value: js.Any): Boolean
+  def isDefined(value: js.Any): js.Boolean
 
-  def isElement(value: js.Any): Boolean
+  def isElement(value: js.Any): js.Boolean
 
-  def isFunction(value: js.Any): Boolean
+  def isFunction(value: js.Any): js.Boolean
 
-  def isNumber(value: js.Any): Boolean
+  def isNumber(value: js.Any): js.Boolean
 
-  def isObject(value: js.Any): Boolean
+  def isObject(value: js.Any): js.Boolean
 
-  def isString(value: js.Any): Boolean
+  def isString(value: js.Any): js.Boolean
 
-  def isUndefined(value: js.Any): Boolean
+  def isUndefined(value: js.Any): js.Boolean
 
   def lowercase(str: js.String): js.String
 
@@ -66,7 +66,7 @@ trait Angular extends js.Object {
 
   def noop(): Unit
 
-  def toJson(obj: js.Any, pretty: Boolean = false): js.String
+  def toJson(obj: js.Any, pretty: js.Boolean = null): js.String
 
   def uppercase(string: js.String): js.String
 
