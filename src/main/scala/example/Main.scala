@@ -13,7 +13,7 @@ object Main {
     scope: Scope with js.Dynamic =>
       scope.firstName = "John"
       scope.lastName = "Doe"
-      scope.fullName = { () =>
+      scope.getFullName = { () =>
         scope.firstName + " " + scope.lastName;
       }: js.Function
   }
