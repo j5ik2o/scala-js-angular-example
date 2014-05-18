@@ -17,6 +17,7 @@ object Main {
         scope.firstName + " " + scope.lastName;
       }: js.Function
   }
+
   module.controller("SimpleController", js.Array("$scope", f))
 
 }
