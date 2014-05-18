@@ -9,15 +9,17 @@ object Main {
 
   val module = angular.module("TestApp", Array.empty[String])
 
-  val f: js.Function = {
-    scope: Scope with js.Dynamic =>
-      scope.firstName = "John"
-      scope.lastName = "Doe"
-      scope.getFullName = { () =>
-        scope.firstName + " " + scope.lastName;
+  module.controller(
+    "SimpleController",
+    Array(
+      "$scope", { scope: Scope with js.Dynamic =>
+        scope.firstName = "John"
+        scope.lastName = "Doe"
+        scope.getFullName = { () =>
+          scope.firstName + " " + scope.lastName;
+        }: js.Function
       }: js.Function
-  }
-
-  module.controller("SimpleController", js.Array("$scope", f))
+    )
+  )
 
 }
